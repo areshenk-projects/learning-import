@@ -1,2 +1,2 @@
-# learning-import
-R package for importing and organizing learning project data.
+# proj_motorlearning2021
+Libraries for the analysis of the learning2021 project

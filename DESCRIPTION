@@ -1,0 +1,17 @@
+Package: motorlearn
+Type: Package
+Title: Libraries for the analysis of the learning2021 project
+Version: 1.0.0
+Author: Corson N. Areshenkoff
+Maintainer: Corson N. Areshenkoff <areshenk@protonmail.com>
+Description: Routines for the importing, organization, and analysis of task data
+    from the motor learning 2021 project.
+Depends: R (>= 3.0.2),
+Imports: jsonlite, data.table, plyr
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
