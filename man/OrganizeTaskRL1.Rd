@@ -7,7 +7,7 @@
 OrganizeTaskRL1(data)
 }
 \arguments{
-\item{json}{A list returned by ImportTaskVMR}
+\item{json}{A list returned by ImportTaskRL1}
 }
 \value{
 A dataframe

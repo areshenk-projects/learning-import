@@ -18,7 +18,7 @@ ImportTaskRL1 <- function(json) {
 
     # Extract information
     global.info    <- raw[[2]]$TrialParams[[1]]
-    task.info      <- raw[[6]]$TrialBlocks
+    task.info      <- raw[[4]]$TrialBlocks
     subject.info   <- raw[[5]]
     system.info    <- raw[[2]]
 
@@ -42,10 +42,10 @@ ImportTaskRL1 <- function(json) {
     # Assemble subject information
     df.subject <- data.frame(WorkerID   = system.info$TurkWorkerId,
                              Assignment = system.info$TurkAssignmentId,
-                             Age    = subject.info$responses$Age,
-                             Sex    = subject.info$responses$Sex,
-                             Device = subject.info$responses$Device,
-                             Hand   = subject.info$responses$Hand,
+                             #Age        = subject.info$responses$Age,
+                             #Sex        = subject.info$responses$Sex,
+                             #Device     = subject.info$responses$Device,
+                             #Hand       = subject.info$responses$Hand,
                              ControlFile     = system.info$ControlFile,
                              OperatingSystem = system.info$OS,
                              Browser         = system.info$Browser$browser,

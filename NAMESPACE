@@ -2,7 +2,9 @@
 
 export(ImportTaskInIGT)
 export(ImportTaskInST)
+export(ImportTaskInTMT)
 export(ImportTaskInWP)
+export(ImportTaskPAL)
 export(ImportTaskRL1)
 export(ImportTaskVMR)
 export(OrganizeTaskRL1)

@@ -20,9 +20,8 @@ OrganizeTaskVMR <- function(data) {
     df.behav$TargetAngle <- 2*pi*task.data$TargetAngle/360
 
     # Subject variables
-    df.behav <- cbind(subject.data$WorkerID, subject.data$Age,
-                      subject.data$Sex, subject.data$Hand, df.behav)
-    names(df.behav)[1:4] <- c('Subject', 'Age', 'Sex', 'Hand')
+    df.behav <- cbind(subject.data$WorkerID, df.behav)
+    names(df.behav)[1] <- c('Subject')
 
     ### Recode cursor into invariant coordinates
     # There are a few transformations here. By default, the cursor y
