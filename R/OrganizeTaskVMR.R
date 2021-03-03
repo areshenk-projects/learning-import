@@ -60,7 +60,7 @@ OrganizeTaskVMR <- function(data) {
                             1, Coord2Complex, center.coords, ring.distance)
     df.behav$ResponseAngle <- Arg(response.cmplx)
     df.behav$TargetAngle   <- -df.behav$TargetAngle + pi/2
-    df.behav$Error         <- df.behav$ResponseAngle - df.behav$TargetAngle
+    df.behav$Error         <- df.behav$TargetAngle - df.behav$ResponseAngle
     df.behav$Error         <- Arg(complex(modulus = 1, argument = df.behav$Error))
 
     # Reaction times
