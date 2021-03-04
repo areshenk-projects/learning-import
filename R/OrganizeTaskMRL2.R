@@ -1,14 +1,14 @@
-#' Organize RL1 data after import
+#' Organize MRL2 data after import
 #'
-#' Function accepts a list returned by ImportTaskRL1 and returns a
+#' Function accepts a list returned by ImportTaskMRL2 and returns a
 #' dataframe of subject task data
 #'
-#' @param json A list returned by ImportTaskRL1
+#' @param json A list returned by ImportTaskMRL2
 #' @return A dataframe
 #'
 #' @export
 
-OrganizeTaskRL1 <- function(data) {
+OrganizeTaskMRL2 <- function(data) {
 
     subject.data <- data$Subject
     global.data  <- data$Global
@@ -29,8 +29,8 @@ OrganizeTaskRL1 <- function(data) {
     # of the screen and scale the coordinates so that the target array lies
     # on the unit circle.
     TransformCoords <- function(x, center.coords, target.distance) {
-        x <- (x - center.coords) / target.distance + .4
-        x <- x * c(1, 1)
+        x <- (x - center.coords) / target.distance
+        x <- x * c(1, -1)
         return(x)
     }
 

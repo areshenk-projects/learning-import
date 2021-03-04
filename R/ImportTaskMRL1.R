@@ -1,6 +1,6 @@
-#' Extract RL1 data from json file
+#' Extract MRL1 data from json file
 #'
-#' Function for extracting data from json files exported from the RL1 task.
+#' Function for extracting data from json files exported from the MRL1 task.
 #' Parses the json file and returns a list containing subject data, system data,
 #' global task variables, and behavior.
 #'
@@ -12,7 +12,7 @@
 #' @importFrom jsonlite read_json
 #' @export
 
-ImportTaskRL1 <- function(json) {
+ImportTaskMRL1 <- function(json) {
 
     raw <- read_json(json)
 
