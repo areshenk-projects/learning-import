@@ -8,7 +8,7 @@
 #' @return Either a ggplot object or a dataframe
 #'
 #' @importFrom tidyr gather
-#' @importFrom ggplot2 ggplot facet_grid theme_classic geom_jitter xlab stat_summary
+#' @importFrom ggplot2 ggplot aes facet_grid theme_classic geom_jitter xlab stat_summary
 #' @export
 
 PlotTaskST <- function(data, plot = F) {

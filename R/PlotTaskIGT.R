@@ -8,7 +8,7 @@
 #' @return Either a ggplot object or a dataframe
 #'
 #' @importFrom tidyr gather
-#' @importFrom ggplot2 ggplot facet_grid theme_bw geom_hline ylab geom_step theme scale_color_manual
+#' @importFrom ggplot2 ggplot aes facet_grid theme_bw geom_hline ylab geom_step theme scale_color_manual
 #' @export
 
 PlotTaskIGT <- function(data, plot = F) {

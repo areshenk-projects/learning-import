@@ -12,7 +12,7 @@
 #' @importFrom jsonlite read_json
 #' @export
 
-ImportTaskRL2 <- function(json) {
+ImportTaskMRL2 <- function(json) {
 
     raw <- read_json(json)
 
